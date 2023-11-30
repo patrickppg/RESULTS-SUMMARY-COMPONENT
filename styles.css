@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.summary {
+  width: 690px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px hsl(241, 100%, 89%, 0.5);
+}
+
+.summary__total-result, .summary__each-result {
+  padding: 2em 2em 2.5em;
+  display: grid;
+  gap: 1.5em;
+  border-radius: inherit;
+}
+
+.summary__total-result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+
+.box-title {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.total-result-box {
+  width: 180px;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+  place-self: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+
+.currentResult {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.maxResult {
+  color: hsl(221, 100%, 96%, 0.4);
+}
+
+.total-text-box > span {
+  margin-bottom: 0.7em;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+
+}
+
+.summary__each-result > .box-title {
+  align-self: start;
+  color: hsl(224, 30%, 27%);
+}
+
+.results {
+  display: grid;
+  gap: .6em;
+}
+
+.result {
+  padding: .7em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.result-type {
+  margin-left: .5em;
+}
+
+.result-score {
+  margin-left: auto;
+  display: flex;
+  gap: .5em;
+}
+
+.result-score > .lighter {
+  color: silver;
+}
+
+.reaction {
+  background: hsl(0, 100%, 98%);
+}
+
+.memory {
+  background: hsl(39, 100%, 98%);
+}
+
+.verbal {
+  background: hsl(166, 100%, 98%);
+}
+
+.visual {
+  background: hsl(234, 85%, 98%);
+}
+
+.reaction > .result-type {
+  color: hsl(0, 100%, 40%);
+}
+
+.memory > .result-type {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal > .result-type {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual > .result-type {
+  color: hsl(234, 85%, 45%);
+}
+
+.continuebtn {
+  border: none;
+  padding: .7em 0;
+  align-self: end;
+  cursor: pointer;
+  background: hsl(224, 30%, 27%);
+  border-radius: 1000px;
+  font-size: inherit;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+}
+
+.continuebtn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+}
